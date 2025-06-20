@@ -26,7 +26,7 @@ apt update -y && apt install -y curl && apt install -y socat && apt install wget
 
 apt install -y git   ### 安装 git 环境
 
-# 担心网站使用率不高被回收，可以配合保活脚本：
+# 甲骨文担心网站使用率不高被回收，可以配合保活脚本：
 
 bash <(wget -qO- --no-check-certificate https://gitlab.com/spiritysdx/Oracle-server-keep-alive-script/-/raw/main/oalive.sh
 
