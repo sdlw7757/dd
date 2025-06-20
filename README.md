@@ -6,7 +6,7 @@ apt-get install ash
 
 # dd命令：
 
-# curl -sSL 'https://raw.githubusercontent.com/sdlw7757/dd/main/InstallNET.sh' | tr -d '\r' > install.sh
+curl -sSL 'https://raw.githubusercontent.com/sdlw7757/dd/main/InstallNET.sh' | tr -d '\r' > install.sh
 chmod +x install.sh
 ./install.sh -u 20.04 -v 64 -p 密码
 
@@ -15,7 +15,7 @@ chmod +x install.sh
 命令中的 -u 后面为 Ubuntu 版本号，-v 后面为 64 位/32 位，【14.04、16.04、18.04、20.04、22.04、24.04暂时】
 
 
-#ash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 9 -v 64 -p 密码
+ash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 9 -v 64 -p 密码
 例：bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 9 -v 64 -p Sdlw53953
 
 
