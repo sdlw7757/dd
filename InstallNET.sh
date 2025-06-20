@@ -200,8 +200,8 @@ function selectMirror(){
   fi
   [ -n "$TEMP" ] || exit 1
   mirrorStatus=0
-  declare -A MirrorBackup
-  MirrorBackup=(["debian0"]="" ["debian1"]="http://deb.debian.org/debian" ["debian2"]="http://archive.debian.org/debian" ["ubuntu0"]="" ["ubuntu1"]="http://archive.ubuntu.com/ubuntu" ["ubuntu2"]="http://ports.ubuntu.com" ["centos0"]="" ["centos1"]="http://mirror.centos.org/centos" ["centos2"]="http://vault.centos.org")
+declare -A MirrorBackup
+MirrorBackup=(["debian0"]="" ["debian1"]="https://mirrors.tuna.tsinghua.edu.cn/debian" ["debian2"]="https://mirrors.ustc.edu.cn/debian" ["ubuntu0"]="" ["ubuntu1"]="https://mirrors.tuna.tsinghua.edu.cn/ubuntu" ["ubuntu2"]="https://mirrors.ustc.edu.cn/ubuntu" ["centos0"]="" ["centos1"]="https://mirrors.tuna.tsinghua.edu.cn/centos" ["centos2"]="https://mirrors.ustc.edu.cn/centos")
   echo "$New" |grep -q '^http://\|^https://\|^ftp://' && MirrorBackup[${Relese}0]="$New"
   for mirror in $(echo "${!MirrorBackup[@]}" |sed 's/\ /\n/g' |sort -n |grep "^$Relese")
     do
