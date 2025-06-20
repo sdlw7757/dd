@@ -1,6 +1,6 @@
 
-# 更新软件源    apt-get 更新
-# 安装 ash shell   apt-get install ash
+# 更新软件源：    apt-get update
+# 安装 ash shell：   apt-get install ash
 
 
 
