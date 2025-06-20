@@ -375,7 +375,8 @@ if [[ -n "$tmpDIST" ]]; then
         [[ "$isDigital" == '16.04' ]] && DIST='xenial';
         [[ "$isDigital" == '18.04' ]] && DIST='bionic';
         [[ "$isDigital" == '20.04' ]] && DIST='focal';
-        # [[ "$isDigital" == '22.04' ]] && DIST='jammy';
+        [[ "$isDigital" == '22.04' ]] && DIST='jammy';
+        [[ "$isDigital" == '24.04' ]] && DIST='sometempcodename'; # 注意：24.04的正式代号可能还未确定，暂时用一个临时代号代替
       }
     }
     LinuxMirror=$(selectMirror "$Relese" "$DIST" "$VER" "$tmpMirror")
@@ -802,5 +803,3 @@ else
   rm -rf "/tmp/vmlinuz"
   echo && ls -AR1 "$HOME/loader"
 fi
-
-
