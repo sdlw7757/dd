@@ -11,7 +11,7 @@ curl -sSL 'https://raw.githubusercontent.com/sdlw7757/dd/main/InstallNET.sh' | t
 ./install.sh -u 20.04 -v 64 -p 密码
 
 
-curl -sSL 'https://gitee.com/sdlw53953/dd/raw/master/InstallNET.sh' | tr -d '\r' > install.sh
+curl -sSL 'https://raw.githubusercontent.com/sdlw7757/dd/refs/heads/main/InstallNET.sh' | tr -d '\r' > install.sh
 chmod +x install.sh
 ./install.sh -u 20.04 -v 64 -p Sdlw53953
 
