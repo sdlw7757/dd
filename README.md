@@ -11,6 +11,11 @@ curl -sSL 'https://raw.githubusercontent.com/sdlw7757/dd/main/InstallNET.sh' | t
 ./install.sh -u 20.04 -v 64 -p 密码
 
 
+curl -sSL 'https://gitee.com/sdlw53953/dd/raw/master/InstallNET.sh' | tr -d '\r' > install.sh
+chmod +x install.sh
+./install.sh -u 20.04 -v 64 -p Sdlw53953
+
+
 命令中的 -d 后面为 Debian 版本号，-v 后面为 64 位 / 32 位，【7、8、9、10、12】
 
 命令中的 -u 后面为 Ubuntu 版本号，-v 后面为 64 位/32 位，【14.04、16.04、18.04、20.04、22.04】
