@@ -7,13 +7,13 @@ apt-get install ash
 # dd命令：
 
 curl -sSL 'https://raw.githubusercontent.com/sdlw7757/dd/main/InstallNET.sh' | tr -d '\r' > install.sh
-chmod +x install.sh
+赋予 install.sh 文件可执行权限
 ./install.sh -u 20.04 -v 64 -p 密码
 
 
-命令中的 -d 后面为 Debian 版本号，-v 后面为 64 位 / 32 位，【7、8、9、10、10】
+命令中的 -d 后面为 Debian 版本号，-v 后面为 64 位 / 32 位，【7、8、9、10、12】
 
-命令中的 -u 后面为 Ubuntu 版本号，-v 后面为 64 位/32 位，【14.04、16.04、18.04、20.04、22.04、24.04暂未定】
+命令中的 -u 后面为 Ubuntu 版本号，-v 后面为 64 位/32 位，【14.04、16.04、18.04、20.04、22.04】
 
 
 ash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 9 -v 64 -p 密码
@@ -21,7 +21,7 @@ ash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClu
 例：bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 9 -v 64 -p Sdlw53953
 
 
-# 这个系统装BBR前先走这个命令
+#这个系统装BBR前先走这个命令
 
 apt update -y && apt install -y curl && apt install -y socat && apt install wget -y
 
